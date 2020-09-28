@@ -1,10 +1,18 @@
 package com.roqua;
 
 class AuthorItem {
+    String type;
     String name;
     int image;
-    String roqia_aya;
-    String harq_aya;
+    String song_url;
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
 
     public String getName() {
         return name;
@@ -22,26 +30,18 @@ class AuthorItem {
         this.image = image;
     }
 
-    public String getRoqia_aya() {
-        return roqia_aya;
+    public String getSong_url() {
+        return song_url;
     }
 
-    public void setRoqia_aya(String roqia_aya) {
-        this.roqia_aya = roqia_aya;
+    public void setSong_url(String song_url) {
+        this.song_url = song_url;
     }
 
-    public String getHarq_aya() {
-        return harq_aya;
-    }
-
-    public void setHarq_aya(String harq_aya) {
-        this.harq_aya = harq_aya;
-    }
-
-    public AuthorItem(String name, int image, String roqia_aya, String harq_aya) {
+    public AuthorItem(String type, String name, int image, String song_url) {
+        this.type = type;
         this.name = name;
         this.image = image;
-        this.roqia_aya = roqia_aya;
-        this.harq_aya = harq_aya;
+        this.song_url = song_url;
     }
 }

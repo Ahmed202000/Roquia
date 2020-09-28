@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#026440</color>
+    <color name="colorPrimaryDark">#026440</color>
+    <color name="colorAccent">#026440</color>
 
     <color name="black_overlay">#66000000</color>
     <item name="blue" type="color">#FF33B5E5</item>
@@ -21,6 +21,8 @@
     <item name="whiteback" type="color">#f9f9f9</item>
     <item name="whitebackground" type="color">#d4d3d3</item>
     <item name="black" type="color">#FF040303</item>
+    <drawable name="colorbgSelect">#FFFF8800</drawable>
+
     <integer-array name="androidcolors">
         <item>@color/blue</item>
         <item>@color/purple</item>
