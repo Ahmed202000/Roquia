@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_180sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="@dimen/_4sdp"
+    android:layout_marginEnd="@dimen/_4sdp"
+    android:layout_marginTop="@dimen/_10sdp">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_20sdp"
+        app:cardCornerRadius="@dimen/_15sdp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_author_image"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                app:civ_border_width="@dimen/_1sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:civ_border_color="@android:color/black"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp" />
+
+
+
+            <TextView
+                android:id="@+id/tv_author_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_author_image"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:fontFamily="@font/quran"
+                android:text="عبد الباسط"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp">
+
+
+
+                <Button
+                    android:layout_weight="1"
+                    android:id="@+id/btn_roqia"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:background="@drawable/btn_shape"
+                    android:fontFamily="@font/araby"
+                    android:text="الرقية الشرعية"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"/>
+
+
+                <Button
+                    android:id="@+id/btn_harq_aya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_shape"
+                    android:fontFamily="@font/araby"
+                    android:text="ايات الحرق"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp" />
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

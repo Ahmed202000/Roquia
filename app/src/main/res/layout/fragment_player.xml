@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteback">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:background="@color/colorPrimary">
+
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+
+                    <TextView
+                        android:id="@+id/player_tv_surah_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:fontFamily="@font/kofy3"
+                        android:text="sskjlksalk"
+                        android:textColor="@color/whiteback"
+                        android:textSize="@dimen/_16sdp" />
+
+
+
+                    <ImageView
+                        android:id="@+id/btn_share"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_baseline_share_24" />
+
+
+
+                    <ImageView
+                        android:id="@+id/btn_rate"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_toEndOf="@id/btn_share"
+                        android:src="@drawable/ic_baseline_star_24" />
+
+
+                </RelativeLayout>
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <RelativeLayout
+                android:id="@+id/rel1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="@color/whiteback"
+                android:layout_centerVertical="true">
+
+
+
+                <ImageView
+                    android:id="@+id/playr_ivpreview"
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/quran" />
+
+
+
+
+                <SeekBar
+                    android:layout_below="@id/playr_ivpreview"
+                    android:id="@+id/player_sbprogress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+
+
+                <RelativeLayout
+                    android:id="@+id/d"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/player_sbprogress"
+                    >
+
+
+                    <TextView
+                        android:id="@+id/tv_timefrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:fontFamily="@font/araby"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/tv_timeto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/araby"
+                        android:textColor="@color/black" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_below="@id/d"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true">
+
+
+
+
+                    <Button
+                        android:id="@+id/player_btnplay"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:background="@drawable/img_btn_play_pressed" />
+
+
+
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:id="@+id/player_btn_pause"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_below="@id/player_sbprogress"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginStart="@dimen/_100sdp"
+                        android:src="@drawable/img_btn_pause_pressed" />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                ads:adSize="BANNER"
+                android:layout_above="@+id/adView"
+                ads:adUnitId="ca-app-pub-2391269993923192/7664917234"/>
+
+
+
+            <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                ads:adSize="BANNER"
+                ads:adUnitId="ca-app-pub-2391269993923192/7664917234"/>
+
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/pprogressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
